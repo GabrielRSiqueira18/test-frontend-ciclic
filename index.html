@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./styles/index.css">
+	<title>Document</title>
+</head>
+<body>
+	<header>
+		<h2>Ciclic</h2>
+	</header>
+	<div class="container">
+		<h2>Simulador</h2>
+		<section class="second-screen" id="secondScreen">
+			<p class="text-after-simulation" id="textAfterSimulation"></p>
+			<button id="simulationAgain">Simular Novamente</button>
+		</section>
+		<form id="form">
+			<div class="input-container">
+				<label for="name">Digite seu nome:</label>
+				<input type="text" name="name" id="name" placeholder="Nome">
+			</div>
+
+			<div class="input-container">
+				<label for="monthyPayment">Digite valor da mensalidade:</label> 
+				<input type="text" name="monthyPayment" id="monthyPayment" placeholder="Mensalidade (anos)">
+			</div>
+
+			<div class="input-container">
+				<label for="time">Digite o tempo do serviço:</label>
+				<input type="text" name="time" id="time" placeholder="Tempo">
+			</div>
+			
+			<button id="submitButton">Simular</button>
+			
+			<p class="error-message" id="errorMessage"></p>
+		</form>
+	</div>
+	
+	<script src="./src/index.js"></script>
+</body>
+</html>
